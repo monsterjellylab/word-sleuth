@@ -25,7 +25,7 @@ namespace Game.Scripts.UI
 
         #region Button Events
 
-        public void OnClassicButtonClicked()
+        public void SwitchToGameUI()
         {
             uiController.ChangeUI(UI.Game);
         }

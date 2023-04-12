@@ -1,4 +1,5 @@
-﻿using Game.Scripts.Helper;
+﻿using System;
+using Game.Scripts.Helper;
 using Logger = Game.Scripts.Helper.Logger;
 
 namespace Game.Scripts.UI

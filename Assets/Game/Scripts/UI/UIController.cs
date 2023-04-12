@@ -67,6 +67,12 @@ namespace Game.Scripts.UI
             winUI.InjectUIController(this);
             loseUI.InjectUIController(this);
 
+            // Close all UI Pages
+            foreach (var keyValuePair in uiPages)
+            {
+                keyValuePair.Value.Close();
+            }
+
             // Call the Open method of the initial ui
             uiPages[activeUI].Open();
         }
