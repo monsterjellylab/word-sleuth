@@ -17,5 +17,20 @@ namespace Game.Scripts.Helper
 
             return null;
         }
+
+        public static bool TryToGetComponentInChildren<T>(this Transform self, out T target)
+        {
+            Transform[] children = self.GetComponentsInChildren<Transform>(true);
+
+            foreach (Transform child in children)
+            {
+                if (child.TryGetComponent(out target))
+                    return true;
+            }
+
+            target = default;
+
+            return false;
+        }
     }
 }
