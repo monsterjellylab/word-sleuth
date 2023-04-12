@@ -548,10 +548,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f91de99957547f3b0034fcad320e389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuUI: {fileID: 0}
-  gameUI: {fileID: 0}
-  winUI: {fileID: 0}
-  loseUI: {fileID: 0}
+  mainMenuUI: {fileID: 274088215}
+  gameUI: {fileID: 1901628208}
+  winUI: {fileID: 264327662}
+  loseUI: {fileID: 1285101348}
 --- !u!114 &1928491965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,7 +568,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &1928491966
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Game.Scripts.FSM;
 using Game.Scripts.Helper;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Game.Scripts.UI
@@ -8,10 +9,17 @@ namespace Game.Scripts.UI
     public class UIController : GenericMonoBehaviourSingleton<UIController>
     {
         // References to UI pages
-        [SerializeField] private UIPage mainMenuUI;
-        [SerializeField] private UIPage gameUI;
-        [SerializeField] private UIPage winUI;
-        [SerializeField] private UIPage loseUI;
+        [PropertyOrder(1)] [SerializeField, ReadOnly]
+        private UIPage mainMenuUI;
+
+        [PropertyOrder(1)] [SerializeField, ReadOnly]
+        private UIPage gameUI;
+
+        [PropertyOrder(1)] [SerializeField, ReadOnly]
+        private UIPage winUI;
+
+        [PropertyOrder(1)] [SerializeField, ReadOnly]
+        private UIPage loseUI;
 
         // Declare a variable to hold the current ui page
         private UI activeUI;
@@ -23,6 +31,24 @@ namespace Game.Scripts.UI
         public delegate void UIChangedEventHandler(UI newUI);
 
         public event UIChangedEventHandler UIChanged;
+
+        #region Editor
+
+        [PropertyOrder(1)]
+        [Button]
+        private void SetRefs()
+        {
+            if (transform.TryToGetComponentInChildren(out MainMenuUI mainMenuUI))
+                this.mainMenuUI = mainMenuUI;
+            if (transform.TryToGetComponentInChildren(out GameUI gameUI))
+                this.gameUI = gameUI;
+            if (transform.TryToGetComponentInChildren(out WinUI winUI))
+                this.winUI = winUI;
+            if (transform.TryToGetComponentInChildren(out LoseUI loseUI))
+                this.loseUI = loseUI;
+        }
+
+        #endregion
 
         private void Start()
         {
