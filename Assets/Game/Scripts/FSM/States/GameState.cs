@@ -20,7 +20,8 @@ namespace Game.Scripts.FSM.States
             Logger.Log(LogMessage.Info, $"{this} OnEnter", logActive);
 
             UIController.Instance.ChangeUI(UI.Enums.UI.Game);
-            Debug.LogWarning(new WordFinder(new JsonThemeLoader()).FindWordsByTheme("fruit")[0]);
+
+            Debug.LogWarning(WordSelector.SelectWord("color", WordDifficulty.Easy));
         }
 
         public override void OnLateUpdate()

@@ -32,5 +32,10 @@ namespace Game.Scripts.Helpers
 
             return false;
         }
+
+        public static T GetRandomElementFromArray<T>(this T[] array)
+        {
+            return array[Random.Range(0, array.Length)];
+        }
     }
 }

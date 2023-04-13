@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Game.Scripts.Interfaces.ITheme;
+﻿using Game.Scripts.Interfaces.ITheme;
 using Game.Scripts.Interfaces.IWord;
 
 namespace Game.Scripts.Helpers
@@ -13,10 +12,25 @@ namespace Game.Scripts.Helpers
             this.themeLoader = themeLoader;
         }
 
-        public string[] FindWordsByTheme(string themeName)
+        public string[] FindWordsByTheme(string themeName, WordDifficulty difficulty)
         {
-            return (from theme in themeLoader.LoadThemes() where theme.Name == themeName select theme.Words)
-                .FirstOrDefault();
+            var themes = themeLoader.LoadThemes();
+
+            foreach (var theme in themes)
+            {
+                if (theme.Name != themeName) continue;
+                    switch (difficulty)
+                    {
+                        case WordDifficulty.Easy:
+                            return theme.Words.Easy;
+                        case WordDifficulty.Medium:
+                            return theme.Words.Medium;
+                        case WordDifficulty.Hard:
+                            return theme.Words.Hard;
+                    }
+            }
+
+            return default;
         }
     }
 }

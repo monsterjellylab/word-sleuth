@@ -4,6 +4,6 @@
     public class Theme
     {
         public string Name;
-        public string[] Words;
+        public WordsData Words;
     }
 }
