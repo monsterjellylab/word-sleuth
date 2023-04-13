@@ -1,52 +1,491 @@
 ﻿{
   "Themes": [
     {
-      "Name": "movie",
-      "Words": [
-        "Avengers",
-        "Batman"
-      ]
+      "Name": "color",
+      "Words": {
+        "Easy": [
+          "Red",
+          "Blue",
+          "Green",
+          "Pink"
+        ],
+        "Medium": [
+          "Magenta",
+          "Turquoise",
+          "Crimson",
+          "Amber"
+        ],
+        "Hard": [
+          "Chartreuse",
+          "Fuchsia",
+          "Cerulean",
+          "Vermilion"
+        ]
+      }
     },
     {
-      "Name": "fruit",
-      "Words": [
-        "Apple",
-        "Banana",
-        "Orange",
-        "Grape",
-        "Pineapple",
-        "Watermelon",
-        "Strawberry",
-        "Cherry"
-      ]
+      "Name": "food",
+      "Words": {
+        "Easy": [
+          "Pizza",
+          "Taco",
+          "Burger",
+          "Pasta"
+        ],
+        "Medium": [
+          "Sushi",
+          "Risotto",
+          "Falafel",
+          "Peking Duck"
+        ],
+        "Hard": [
+          "Bouillabaisse",
+          "Cassoulet",
+          "Tournedos Rossini",
+          "Coq au Vin"
+        ]
+      }
     },
     {
-      "Name": "country",
-      "Words": [
-        "United States",
-        "Canada",
-        "Mexico",
-        "Brazil",
-        "Argentina",
-        "France",
-        "Germany",
-        "China",
-        "Japan",
-        "Australia"
-      ]
+      "Name": "city",
+      "Words": {
+        "Easy": [
+          "Paris",
+          "London",
+          "New York",
+          "Tokyo"
+        ],
+        "Medium": [
+          "Barcelona",
+          "Mumbai",
+          "Sydney",
+          "Rome"
+        ],
+        "Hard": [
+          "Reykjavik",
+          "Timbuktu",
+          "Ulaanbaatar",
+          "Ljubljana"
+        ]
+      }
+    },
+    {
+      "Name": "music genre",
+      "Words": {
+        "Easy": [
+          "Pop",
+          "Rock",
+          "Jazz",
+          "Blues",
+          "Country",
+          "Rap",
+          "Classical",
+          "Folk"
+        ],
+        "Medium": [
+          "Hip hop",
+          "Reggae",
+          "Electronic",
+          "Funk",
+          "Heavy metal",
+          "Indie",
+          "Soul",
+          "R&B"
+        ],
+        "Hard": [
+          "Grunge",
+          "Punk",
+          "Psychedelic",
+          "Gospel",
+          "Bossa nova",
+          "Opera",
+          "World music",
+          "Experimental"
+        ]
+      }
+    },
+    {
+      "Name": "sport",
+      "Words": {
+        "Easy": [
+          "Soccer",
+          "Basketball",
+          "Tennis",
+          "Golf"
+        ],
+        "Medium": [
+          "Surfing",
+          "Squash",
+          "Badminton",
+          "Volleyball"
+        ],
+        "Hard": [
+          "Skeleton",
+          "Fencing",
+          "Pole vault",
+          "Bobsleigh"
+        ]
+      }
+    },
+    {
+      "Name": "vehicle",
+      "Words": {
+        "Easy": [
+          "Car",
+          "Bicycle",
+          "Motorcycle",
+          "Train"
+        ],
+        "Medium": [
+          "Helicopter",
+          "Sailboat",
+          "Jet ski",
+          "Airplane"
+        ],
+        "Hard": [
+          "Hovercraft",
+          "Zeppelin",
+          "Submarine",
+          "Formula One car"
+        ]
+      }
     },
     {
       "Name": "animal",
-      "Words": [
-        "Dog",
-        "Cat",
-        "Horse",
-        "Lion",
-        "Tiger",
-        "Elephant",
-        "Giraffe",
-        "Monkey"
-      ]
+      "Words": {
+        "Easy": [
+          "Dog",
+          "Cat",
+          "Rabbit",
+          "Panda"
+        ],
+        "Medium": [
+          "Kangaroo",
+          "Hippopotamus",
+          "Ostrich",
+          "Gorilla"
+        ],
+        "Hard": [
+          "Platypus",
+          "Narwhal",
+          "Capybara",
+          "Quokka"
+        ]
+      }
+    },
+    {
+      "Name": "movie",
+      "Words": {
+        "Easy": [
+          "Jumanji",
+          "Frozen",
+          "Coco",
+          "Despicable Me",
+          "Moana"
+        ],
+        "Medium": [
+          "Avengers",
+          "Batman",
+          "Inception",
+          "Jurassic Park",
+          "Harry Potter"
+        ],
+        "Hard": [
+          "Interstellar",
+          "Pulp Fiction",
+          "The Godfather",
+          "The Silence of the Lambs",
+          "Fight Club"
+        ]
+      }
+    },
+    {
+      "Name": "fruit",
+      "Words": {
+        "Easy": [
+          "Apple",
+          "Banana",
+          "Orange",
+          "Grape",
+          "Kiwi"
+        ],
+        "Medium": [
+          "Pineapple",
+          "Watermelon",
+          "Strawberry",
+          "Cherry",
+          "Mango"
+        ],
+        "Hard": [
+          "Pomegranate",
+          "Starfruit",
+          "Durian",
+          "Kumquat",
+          "Dragonfruit"
+        ]
+      }
+    },
+    {
+      "Name": "country",
+      "Words": {
+        "Easy": [
+          "United States",
+          "Canada",
+          "Mexico",
+          "Brazil",
+          "Spain"
+        ],
+        "Medium": [
+          "Argentina",
+          "France",
+          "Germany",
+          "China",
+          "Japan"
+        ],
+        "Hard": [
+          "Thailand",
+          "South Africa",
+          "Australia",
+          "Russia",
+          "Norway"
+        ]
+      }
+    },
+    {
+      "Name": "vegetables",
+      "Words": {
+        "Easy": [
+          "Carrot",
+          "Pea",
+          "Corn",
+          "Onion",
+          "Tomato"
+        ],
+        "Medium": [
+          "Broccoli",
+          "Cauliflower",
+          "Zucchini",
+          "Eggplant",
+          "Cucumber"
+        ],
+        "Hard": [
+          "Artichoke",
+          "Asparagus",
+          "Radicchio",
+          "Fennel",
+          "Okra"
+        ]
+      }
+    },
+    {
+      "Name": "occupation",
+      "Words": {
+        "Easy": [
+          "Teacher",
+          "Doctor",
+          "Nurse",
+          "Farmer",
+          "Chef",
+          "Actor",
+          "Writer",
+          "Carpenter"
+        ],
+        "Medium": [
+          "Engineer",
+          "Architect",
+          "Journalist",
+          "Psychologist",
+          "Lawyer",
+          "Scientist",
+          "Electrician",
+          "Mechanic"
+        ],
+        "Hard": [
+          "Neurosurgeon",
+          "Astronomer",
+          "Paleontologist",
+          "Archaeologist",
+          "Diplomat",
+          "Philosopher",
+          "Biotechnologist",
+          "Quantum physicist"
+        ]
+      }
+    },
+    {
+      "Name": "book genre",
+      "Words": {
+        "Easy": [
+          "Romance",
+          "Mystery",
+          "Thriller",
+          "Fantasy",
+          "Science fiction",
+          "Historical fiction",
+          "Humor",
+          "Children's"
+        ],
+        "Medium": [
+          "Horror",
+          "Crime",
+          "Adventure",
+          "Young adult",
+          "Erotica",
+          "Biography",
+          "Autobiography",
+          "Memoir"
+        ],
+        "Hard": [
+          "Postmodern",
+          "Magical realism",
+          "Dystopian",
+          "Surrealism",
+          "Philosophical",
+          "Experimental",
+          "Absurdist",
+          "Metafiction"
+        ]
+      }
+    },
+    {
+      "Name": "planet",
+      "Words": {
+        "Easy": [
+          "Mars",
+          "Venus",
+          "Jupiter",
+          "Saturn",
+          "Mercury",
+          "Neptune",
+          "Uranus",
+          "Pluto"
+        ],
+        "Medium": [
+          "Marsupial",
+          "Supernova",
+          "Asteroid",
+          "Celestial",
+          "Cosmonaut",
+          "Exoplanet",
+          "Interstellar",
+          "Galactic"
+        ],
+        "Hard": [
+          "Extraterrestrial",
+          "Astrophysics",
+          "Constellation",
+          "Nebula",
+          "Singularity",
+          "Stellar Evolution",
+          "Cosmology",
+          "Event Horizon"
+        ]
+      }
+    },
+    {
+      "Name": "book",
+      "Words": {
+        "Easy": [
+          "Harry Potter",
+          "The Hobbit",
+          "To Kill a Mockingbird",
+          "The Catcher in the Rye",
+          "The Great Gatsby",
+          "Lord of the Flies",
+          "Animal Farm",
+          "The Little Prince"
+        ],
+        "Medium": [
+          "Pride and Prejudice",
+          "1984",
+          "The Hitchhiker's Guide to the Galaxy",
+          "Brave New World",
+          "The Picture of Dorian Gray",
+          "One Hundred Years of Solitude",
+          "The Bell Jar",
+          "The Color Purple"
+        ],
+        "Hard": [
+          "Ulysses",
+          "Moby-Dick",
+          "Infinite Jest",
+          "Gravity's Rainbow",
+          "The Sound and the Fury",
+          "Finnegans Wake",
+          "War and Peace",
+          "The Brothers Karamazov"
+        ]
+      }
+    },
+    {
+      "Name": "musical instrument",
+      "Words": {
+        "Easy": [
+          "Piano",
+          "Guitar",
+          "Drums",
+          "Bass",
+          "Trumpet",
+          "Violin",
+          "Harp",
+          "Flute"
+        ],
+        "Medium": [
+          "Accordion",
+          "Bagpipes",
+          "Harmonica",
+          "Mandolin",
+          "Saxophone",
+          "Trombone",
+          "Cello",
+          "Ukulele"
+        ],
+        "Hard": [
+          "Theremin",
+          "Sitar",
+          "Balalaika",
+          "Didgeridoo",
+          "Oud",
+          "Erhu",
+          "Koto",
+          "Ney"
+        ]
+      }
+    },
+    {
+      "Name": "mythology",
+      "Words": {
+        "Easy": [
+          "Zeus",
+          "Thor",
+          "Athena",
+          "Apollo",
+          "Odin",
+          "Loki",
+          "Hades",
+          "Poseidon"
+        ],
+        "Medium": [
+          "Ragnarok",
+          "Kraken",
+          "Cerberus",
+          "Medusa",
+          "Minotaur",
+          "Gorgon",
+          "Chimera",
+          "Sphinx"
+        ],
+        "Hard": [
+          "Mjolnir",
+          "Yggdrasil",
+          "Nidhogg",
+          "Fenrir",
+          "Jormungandr",
+          "Tiamat",
+          "Anubis",
+          "Quetzalcoatl"
+        ]
+      }
     }
   ]
 }
