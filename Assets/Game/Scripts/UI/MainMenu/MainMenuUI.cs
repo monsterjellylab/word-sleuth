@@ -1,8 +1,10 @@
-﻿using Game.Scripts.Helper;
-using Logger = Game.Scripts.Helper.Logger;
+﻿using Game.Scripts.FSM;
+using Game.Scripts.Utils;
 
-namespace Game.Scripts.UI
+namespace Game.Scripts.UI.MainMenu
 {
+    using Enums;
+
     public class MainMenuUI : UIPage
     {
         public override void UpdateUI()
@@ -25,9 +27,9 @@ namespace Game.Scripts.UI
 
         #region Button Events
 
-        public void SwitchToGameUI()
+        public void OnStartButtonClicked()
         {
-            uiController.ChangeUI(UI.Game);
+            StateMachine.Instance.ChangeState(State.Game);
         }
 
         #endregion

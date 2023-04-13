@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Game.Scripts.Helper;
+using Game.Scripts.Singletons;
 using Game.Scripts.FSM.States;
 using UnityEngine;
-using Logger = Game.Scripts.Helper.Logger;
+using Logger = Game.Scripts.Utils;
 
 namespace Game.Scripts.FSM
 {

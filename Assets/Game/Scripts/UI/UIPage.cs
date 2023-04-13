@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Game.Scripts.UI.Interfaces;
+using UnityEngine;
 
 namespace Game.Scripts.UI
 {

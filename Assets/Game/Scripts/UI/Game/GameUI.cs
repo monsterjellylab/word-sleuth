@@ -1,9 +1,8 @@
-﻿using Game.Scripts.Helper;
-using Logger = Game.Scripts.Helper.Logger;
+﻿using Game.Scripts.Utils;
 
-namespace Game.Scripts.UI
+namespace Game.Scripts.UI.Game
 {
-    public class LoseUI : UIPage
+    public class GameUI : UIPage
     {
         public override void UpdateUI()
         {

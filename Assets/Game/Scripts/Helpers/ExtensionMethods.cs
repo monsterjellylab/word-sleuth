@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Game.Scripts.Helper
+namespace Game.Scripts.Helpers
 {
     public static class ExtensionMethods
     {

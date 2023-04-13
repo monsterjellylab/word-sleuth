@@ -1,4 +1,4 @@
-﻿namespace Game.Scripts.Helper
+﻿namespace Game.Scripts.Singletons
 {
     using UnityEngine;
 

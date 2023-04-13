@@ -1,8 +1,10 @@
 ﻿using System;
 using System.IO;
+using Game.Scripts.Utils;
 using UnityEngine;
+using Logger = Game.Scripts.Utils.Logger;
 
-namespace Game.Scripts.Helper
+namespace Game.Scripts.IO
 {
     public static class JSONFileIO
     {

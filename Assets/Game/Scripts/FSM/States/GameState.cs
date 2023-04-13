@@ -1,4 +1,9 @@
-﻿using Game.Scripts.Helper;
+﻿using Game.Scripts.Helpers;
+using Game.Scripts.Loaders;
+using Game.Scripts.UI;
+using Game.Scripts.Utils;
+using UnityEngine;
+using Logger = Game.Scripts.Utils.Logger;
 
 namespace Game.Scripts.FSM.States
 {
@@ -13,6 +18,9 @@ namespace Game.Scripts.FSM.States
             base.OnEnter();
 
             Logger.Log(LogMessage.Info, $"{this} OnEnter", logActive);
+
+            UIController.Instance.ChangeUI(UI.Enums.UI.Game);
+            Debug.LogWarning(new WordFinder(new JsonThemeLoader()).FindWordsByTheme("fruit")[0]);
         }
 
         public override void OnLateUpdate()

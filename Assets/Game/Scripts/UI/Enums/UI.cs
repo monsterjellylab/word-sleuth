@@ -1,4 +1,4 @@
-﻿namespace Game.Scripts.UI
+﻿namespace Game.Scripts.UI.Enums
 {
     public enum UI
     {

@@ -1,11 +1,18 @@
 ﻿using System.Collections.Generic;
 using Game.Scripts.FSM;
-using Game.Scripts.Helper;
+using Game.Scripts.Helpers;
+using Game.Scripts.Singletons;
+using Game.Scripts.UI.Game;
+using Game.Scripts.UI.Interfaces;
+using Game.Scripts.UI.Lose;
+using Game.Scripts.UI.MainMenu;
+using Game.Scripts.UI.Win;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Game.Scripts.UI
 {
+    using Enums;
     public class UIController : GenericMonoBehaviourSingleton<UIController>
     {
         // References to UI pages

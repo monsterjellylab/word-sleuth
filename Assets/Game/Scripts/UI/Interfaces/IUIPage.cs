@@ -1,4 +1,4 @@
-﻿namespace Game.Scripts.UI
+﻿namespace Game.Scripts.UI.Interfaces
 {
     public interface IUIPage
     {
