@@ -1,0 +1,52 @@
+﻿{
+  "Themes": [
+    {
+      "Name": "movie",
+      "Words": [
+        "Avengers",
+        "Batman"
+      ]
+    },
+    {
+      "Name": "fruit",
+      "Words": [
+        "Apple",
+        "Banana",
+        "Orange",
+        "Grape",
+        "Pineapple",
+        "Watermelon",
+        "Strawberry",
+        "Cherry"
+      ]
+    },
+    {
+      "Name": "country",
+      "Words": [
+        "United States",
+        "Canada",
+        "Mexico",
+        "Brazil",
+        "Argentina",
+        "France",
+        "Germany",
+        "China",
+        "Japan",
+        "Australia"
+      ]
+    },
+    {
+      "Name": "animal",
+      "Words": [
+        "Dog",
+        "Cat",
+        "Horse",
+        "Lion",
+        "Tiger",
+        "Elephant",
+        "Giraffe",
+        "Monkey"
+      ]
+    }
+  ]
+}
