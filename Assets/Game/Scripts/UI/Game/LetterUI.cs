@@ -1,12 +1,20 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 namespace Game.Scripts.UI.Game
 {
     public class LetterUI : MonoBehaviour
     {
+        [SerializeField] private TMP_Text textField;
+
+        public char OriginalLetter;
+
         public void SetLetter(char originalLetter, char randomLetter)
         {
-            Debug.Log($"{name} original letter {originalLetter} ---- random letter {randomLetter}");
+            textField.text = randomLetter.ToString();
+            OriginalLetter = originalLetter;
+            
+            Debug.Log(originalLetter);
         }
     }
 }
