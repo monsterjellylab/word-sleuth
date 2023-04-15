@@ -27,7 +27,7 @@ namespace Game.Scripts.UI.Game
              * Word can be multiple sub-words separated by space.
              * That's why it should split by space.
              */
-            var subWords = selectedWord.Split("");
+            var subWords = selectedWord.Split(" ");
 
             // Initialize count variable that store number of words
             int wordCount = subWords.Length;
