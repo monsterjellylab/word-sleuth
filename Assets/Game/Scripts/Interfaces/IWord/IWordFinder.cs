@@ -2,6 +2,6 @@
 {
     public interface IWordFinder<T>
     {
-        T[] FindWordsByTheme(string themeName, WordDifficulty difficulty);
+        T[] FindWords(string themeName, WordDifficulty difficulty);
     }
 }

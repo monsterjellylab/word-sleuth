@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Game.Scripts.FSM;
 using Game.Scripts.Helpers;
 using Game.Scripts.Singletons;
