@@ -13,6 +13,7 @@ using UnityEngine;
 namespace Game.Scripts.UI
 {
     using Enums;
+
     public class UIController : GenericMonoBehaviourSingleton<UIController>
     {
         // References to UI pages

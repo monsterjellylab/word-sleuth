@@ -19,7 +19,7 @@ namespace Game.Scripts.UI.Game
         }
 
         // Creates a letter board and fills them with proper word letters
-        
+
         // TODO: Apply SRP
         public void InitializeBoard(string selectedWord)
         {
@@ -74,10 +74,10 @@ namespace Game.Scripts.UI.Game
                     for (int k = 0; k < shuffledLettersList.Count; k++)
                     {
                         randomLetter = shuffledLettersList[k];
-                        
+
                         if (k == shuffledLettersList.Count - 1)
                             break;
-                        
+
                         if (!randomLetter.Equals(originalLetter))
                             break;
                     }
@@ -91,6 +91,17 @@ namespace Game.Scripts.UI.Game
 
                 wordUIElements[i].gameObject.SetActive(true);
                 wordUIElements[i].ConstructWord(originalLetterArr, randomLetterArr);
+            }
+        }
+
+        public void Reset()
+        {
+            foreach (var wordUIElement in wordUIElements)
+            {
+                if (!wordUIElement.gameObject.activeSelf)
+                    continue;
+                wordUIElement.Reset();
+                wordUIElement.gameObject.SetActive(false);
             }
         }
     }

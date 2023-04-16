@@ -22,20 +22,6 @@ namespace Game.Scripts.UI.Game
 
         #endregion
 
-        #region Unity Initializations
-
-        private void OnEnable()
-        {
-            WordSelector.WordSelected += initializeLettersBoard;
-        }
-
-        private void OnDisable()
-        {
-            WordSelector.WordSelected -= initializeLettersBoard;
-        }
-
-        #endregion
-
         // Start initialization of board with selected word
         private void initializeLettersBoard(string selectedWord)
         {
@@ -54,12 +40,16 @@ namespace Game.Scripts.UI.Game
         {
             base.Open();
             Logger.Log(LogMessage.Info, $"{this} Open");
+
+            initializeLettersBoard(WordSelector.SelectedWord);
         }
 
         public override void Close()
         {
             base.Close();
             Logger.Log(LogMessage.Info, $"{this} Close");
+
+            lettersBoard.Reset();
         }
 
         #endregion

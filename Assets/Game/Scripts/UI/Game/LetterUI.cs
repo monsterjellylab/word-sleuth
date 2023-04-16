@@ -13,8 +13,16 @@ namespace Game.Scripts.UI.Game
         {
             textField.text = randomLetter.ToString();
             OriginalLetter = originalLetter;
-            
+
             Debug.Log(originalLetter);
+        }
+
+        public void Reset()
+        {
+            textField.text = "";
+            OriginalLetter = default;
+            
+            Debug.LogWarning($"{name} RESET!");
         }
     }
 }

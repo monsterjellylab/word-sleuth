@@ -28,5 +28,18 @@ namespace Game.Scripts.UI.Game
                 letterUIElements[i].SetLetter(originalLetterList[i], randomLetterList[i]);
             }
         }
+
+        public void Reset()
+        {
+            foreach (var letterUIElement in letterUIElements)
+            {
+                if (!letterUIElement.gameObject.activeSelf)
+                    continue;
+                letterUIElement.Reset();
+                letterUIElement.gameObject.SetActive(false);
+            }
+            Debug.LogWarning($"{name} RESET!");
+
+        }
     }
 }

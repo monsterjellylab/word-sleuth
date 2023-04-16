@@ -1,5 +1,4 @@
 ﻿using Game.Scripts.Selector;
-using Game.Scripts.UI;
 using Game.Scripts.Utils;
 using Logger = Game.Scripts.Utils.Logger;
 
@@ -17,9 +16,7 @@ namespace Game.Scripts.FSM.States
 
             Logger.Log(LogMessage.Info, $"{this} OnEnter", logActive);
 
-            UIController.Instance.ChangeUI(UI.Enums.UI.Game);
-
-            WordSelector.SelectWord(difficulty: WordDifficulty.Easy);
+            WordSelector.SelectWord("color", WordDifficulty.Easy);
         }
 
         public override void OnLateUpdate()
